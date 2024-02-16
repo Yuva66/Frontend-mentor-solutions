@@ -2,182 +2,255 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  
-  <title>Frontend Mentor | Recipe page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Document</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <style>
     body{
+      background-color: hsla(241, 72%, 46%, 0);
       display: flex;
       justify-content: center;
-      background-color: lightgray;
+      align-items: center;
+      height: 900px;
+      font-family: "Hanken Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
     }
     .container{
       background-color: white;
-      width: 720px;
-      margin: 100px 0;
+      display: flex;
+      justify-content: center;
+      height: 350px;
+      width: 500px;
+      border-radius: 20px;
+      gap: 20px;
+    }
+    .content1{
+      background-color: hsl(241, 81%, 54%);
+      border-radius: 20px;
+      width: 350px;
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-radius: 20px;
-      font-family: "Outfit", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
+      padding-top: 10px;
+      text-align: center;
     }
-    .img1{
-      height: 300px;
-      width: 650px;
-      margin-top: 30px;
-      border-radius: 20px;
-    }
-    .title,.info2,.info3,.info4{
-      font-family: "Young Serif", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-    .content-2{
-      display: block;
-      width: 650px;
+    .msg1{
+      font-weight: 300;
+      font-size: 15px;
       margin-top: 10px;
     }
-    .content-3{
-      background-color: hsl(330, 100%, 98%);
-      width: 650px;
-      border-radius: 12px;
-    }
-    .info1{
-      padding-left: 30px;
-      color: hsl(332, 51%, 32%);
-    }
-    .list1{
-      padding-left: 50px;
-      font-size: 15px;
+    .result{
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      background-color: hsla(241, 72%, 46%, 1);
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      
     }
-    .highlight{
+    .score{
+      font-size: 50px;
       font-weight: 700;
+      margin: 0;
     }
-    .content-4{
-      width: 650px;
+    .total{
+      margin: 0;
+      font-weight: 100;
+      font-size: 12px;
     }
-    .info2,.info3,.info4{
-      color: hsl(14, 45%, 36%);
-    }
-    .list2{
+    .message{
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
     }
-    .content-5{
-      width: 650px;
+    .great{
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
     }
-    .list3{
+    .para{
+      margin: 10px;
+      font-weight: 200;
+      width: 180px;
+      font-size: 13px;
+    }
+    .content2{
+      width: 330px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
     }
-    .content-6{
-      width: 650px;
+    .summary{
+      font-weight: 800;
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 10px;
     }
-    .table{
-      width: 650px;
-      margin-bottom: 20px;
-    }
-    .table tr{
-      width: 650px;
-    }
-    .table td {
-      padding: 12px 25px;
-      width: 270px;
-    }
-    .table th{
-      padding: 12px;
+    .marks{
       display: flex;
-      color: hsl(332, 51%, 32%);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
-    .first{
-      border-bottom: 1px solid #ddd;
+    .reaction{
+      display: inline-flex;
+      background-color: hsl(0, 100%, 99%);
+      height: 50px;
+      width: 200px;
+      margin-right: 20px;
+      border-radius: 8px;
     }
-    .content-4,.content-5{
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
+    .img{
+      display: flex;
+      margin-left: 10px;
     }
-
+    .smark{
+      margin-left: 20px;
+    }
+    .re{
+      margin-left: 10px;
+      color: hsl(0, 100%, 67%);
+    }
+    .memory{
+      display: inline-flex;
+      background-color: hsl(39, 100%, 99%);
+      height: 50px;
+      width: 200px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    .img1{
+      display: flex;
+      margin-left: 10px;
+    }
+    .smark1{
+      margin-left: 23px;
+    }
+    .me{
+      margin-left: 10px;
+      color: hsl(39, 100%, 56%);
+    }
+    .verbal{
+      display: inline-flex;
+      background-color: hsl(166, 100%, 99%);
+      height: 50px;
+      width: 200px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    .img2{
+      display: flex;
+      margin-left: 10px;
+    }
+    .smark2{
+      margin-left: 37px;
+    }
+    .ve{
+      margin-left: 10px;
+      color: hsl(166, 100%, 37%);
+    }
+    .visual{
+      display: inline-flex;
+      background-color: hsl(234, 85%, 99%);
+      height: 50px;
+      width: 200px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    .img3{
+      display: flex;
+      margin-left: 10px;
+    }
+    .smark3{
+      margin-left: 39px;
+    }
+    .vi{
+      margin-left: 10px;
+      color: hsl(234, 85%, 45%);
+    }
+    .continue{
+      background-color: hsl(224, 30%, 27%);
+      width: 192px;
+      height: 35px;
+      color: white;
+      border-radius: 15px;
+      margin-top: 25px;
+      margin-left: 10px;
+      border: 0;
+    }
+    .continue:hover{
+      background-color: hsl(241, 81%, 54%);
+      color: white;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="content-1">
-      <img class="img1" src="./assets/images/image-omelette.jpeg" alt="omelette">
-    </div>
-    <div class="content-2">
-      <h1 class="title">Simple Omelette Recipe</h1>
-      <p class="msg1">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-        to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+    <div class="content1">
+      <h5 class="msg1">Your Result</h5>
+      <div class="result">
+        <p class="score">76</p>
+        <p class="total">of 100</p>
+      </div>
+      <div class="message">
+      <p class="great">Great</p>
+      <p class="para">You scored higher than 65% of the people who have taken these tests.
       </p>
     </div>
-    <div class="content-3">
-      <h3 class="info1">Preparation time</h3>
-      <ul class="list1">
-        <li><span class="highlight"> Total:</span> Approximately 10 minutes</li>
-        <li><span class="highlight"> Preparation:</span> 5 minutes</li>
-        <li><span class="highlight"> Cooking:</span> 5 minutes</li>
-      </ul>
     </div>
-    <div class="content-4">
-      <h2 class="info2">Ingredients</h2>
-      <ul class="list2">
-        <li>2-3 large eggs</li>
-        <li>Salt, to taste</li>
-        <li>Pepper, to taste</li>
-        <li>1 tablespoon of butter or oil</li>
-        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-      </ul>
-    </div>
-    <div class="content-5">
-      <h2 class="info3">Instructions</h2>
-      <ol class="list3">
-        <li><span class="highlight"> Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-          You can add a tablespoon of water or milk for a fluffier texture.</li>
-        <li><span class="highlight">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li><span class="highlight">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-          the eggs evenly coat the surface.</li>
-        <li><span class="highlight">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
-          middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        <li><span class="highlight">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
-          fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        <li><span class="highlight">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
-      </ol>
-    </div>
-    <div class="content-6">
-      <h2 class="info4">Nutrition</h2>
-      <p class="msg2">The table below shows nutritional values per serving without the additional fillings.</p>
-      <table class="table">
-        <tr>
-          <td class="first">Calories</td>
-          <th class="first">277kcal</th>
-        </tr>
-        <tr>
-          <td class="first">Carbs</td>
-          <th class="first">0g</th>
-        </tr>
-        <tr>
-          <td class="first">Protein</td>
-          <th class="first">20g</th>
-        </tr>
-        <tr>
-          <td class="last">Fat</td>
-          <th class="last">22g</th>
-        </tr>
-      </table>
+    <div class="content2">
+      <h5 class="summary">Summary</h5>
+      <div class="marks">
+        <div class="reaction">
+          <div class="img">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction">
+            <p class="re">Reaction</p>
+          </div>
+          <div class="smark">
+            <p>80 / 100</p>
+          </div>
+        </div>
+        <div class="memory">
+          <div class="img1">
+            <img src="./assets/images/icon-memory.svg" alt="reaction">
+            <p class="me">Memory</p>
+          </div>
+          <div class="smark1">
+            <p>92 / 100</p>
+          </div>
+        </div>
+        <div class="verbal">
+          <div class="img2">
+            <img src="./assets/images/icon-verbal.svg" alt="reaction">
+            <p class="ve">Verbal</p>
+          </div>
+          <div class="smark2">
+            <p>61 / 100</p>
+          </div>
+        </div>
+        <div class="visual">
+          <div class="img3">
+            <img src="./assets/images/icon-visual.svg" alt="reaction">
+            <p class="vi">Visual</p>
+          </div>
+          <div class="smark3">
+            <p>72 / 100</p>
+          </div>
+        </div>
+      </div>
+      <button class="continue" type="button">Continue</button>
     </div>
   </div>
 
